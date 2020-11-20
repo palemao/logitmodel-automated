@@ -6,6 +6,9 @@ Created on Fri Nov 20 13:48:44 2020
 """
 
 
+#CHECK READ-ME FILE FOR EXPLAINATIONS
+
+
 
 
 

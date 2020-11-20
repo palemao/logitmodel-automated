@@ -12,7 +12,7 @@ Step 1: Identify a large range of variables of all people (treated and untreated
 Step 2: First oversampling treatment group (if necessary), input treatment (actual or oversmapled) data and untreated group data into a logistic regression with 1=treated_person
 0=untreated_person
   a: Plot ROC plot using *Use fpr_tnr_df* which outputs the true positive rate and true negative rate at different probability thresholds (*fpr_tpr_thresholds* outputs different probabiity threshold)
-  b: Choose model with the most "right angled" ROC curve. It is important to note if the model is too accurate (has high tnr and tpr) there may not be enough valid matches. Therefore, the key trade off to understand: By adding more variables we could reduce the probabilty overlap between untreated and treated patients too much so there aren't enough valid matches, but reducing the the number of variables we could be reducing the quality of matches
+  b: Choose model with the most "right angled" ROC curve (has highest tnr and tpr for different probability estimates). The key trade off to understand: By adding more variables we could reduce the probabilty overlap between untreated and treated patients too much so there aren't enough valid matches, but reducing the the number of variables we could be reducing the quality of matches
 
 Step 3: Use matching() function in repository to find matched patients based on logistic regression probability estimates
         a: There are differnt matching algorithms that can be used, I chose an optimal alogrithm  

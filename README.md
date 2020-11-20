@@ -2,7 +2,9 @@
 Evaluation of an Intervention using Control Group: 
 
 treatment_group = people that used the intervention
+
 untreated_group = people that did not use the intervention
+
 control_group = people that did not use the intervention that are very similar to the treatment group
 
 ## Identify Control Group

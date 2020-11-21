@@ -1,4 +1,4 @@
-# Evaluation-of-an-Intervention-using-Control-Group
+# Testing-Intervention-using-Control-Group
 Evaluation of an Intervention using Control Group: 
 
 treatment_group = people that used the intervention

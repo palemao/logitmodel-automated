@@ -44,14 +44,15 @@ a. Ensure your cleaned df is saved in a variable called data2
  
       2. Inputs
       
-      x_1 = ['CHAS', 'RM'] #model1
-      x_2 = [ 'AGE', 'DIS'] #model2
-      x_3 = ['DIS', 'RM', 'TAX', 'INDUS'] #model3
+      x_1 = ['CHAS', 'RM']                  #model1
+      x_2 = [ 'AGE', 'DIS']                 #model2
+      x_3 = ['DIS', 'RM', 'TAX', 'INDUS']   #model3
       
       #add more models if you have the computing power!
-      x_list = [x_1, x_2, x_3] # put model variables in a list
-      model_name_list = ['x_1', 'x_2', 'x_3'] # put string labels for each model
-      y = 'highcrimerate'  # specify y column string
+     
+     x_list = [x_1, x_2, x_3]                 # put model variables in a list
+     model_name_list = ['x_1', 'x_2', 'x_3'] # put string labels for each model
+     y = 'highcrimerate'                     # specify y column string
       
       hit run! 
 
@@ -60,22 +61,22 @@ a. Ensure your cleaned df is saved in a variable called data2
   a. pythonvariable *vif_results* outputs vif results of all models
 ROC plots of training and testing data
 
-  b. Predicted probabilities of training and testing data; *predictedvalues_list_std* and *predictedvalues_list_test* 
+  b. Predicted probabilities of training, testing and testing from balanced data; *predictedvalues_list_std* , *predictedvalues_list_test* and *predictedvalues_list_test_ovr*(testing data probabilties on oversampled model)
   
-  c. Training and testing data ROCs plotted (see console, or plot tab)
+  c. Training, testing and  testing data on model trained from balanced dataROCs plotted (see console, or plot tab)
   
   d. Training and testing data optimal threshold to maximise classification accuracy 
-    d2. Cross-Validation Scores 
+    d2. Cross-Validation Scores *optimal_train*, *optimal_test* and *optimal_test_ovr*
   
-  e. Odd ratios of trained model
-    
+  e. Odd ratios of trained model and balanced data trained model
+  
   
 
 4. Useful notes
 
 a. heatmap function is used to visualise multi-collinearity. It can run for all models in a list, it must be used for each model individually, unlike most outputs.
 
-b. I aim to include statiscal inference to improve this
+b. both balanced(through oversampling) and unbalanced was used to train the model
 
 
 
